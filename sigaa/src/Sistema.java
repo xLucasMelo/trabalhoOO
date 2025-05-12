@@ -1,7 +1,9 @@
 import java.util.Scanner;
+import sigaa.src.alunos.*;
+static AlunosListar alunosListar = new AlunosListar();
 
 public void main() {
-        int opcaoSelecionada = 0;
+        int opcaoSelecionada;
         do {
             System.out.println("======MENU PRINCIPAL========");
             System.out.println("1.Aluno");
@@ -30,7 +32,7 @@ public void main() {
         } while (opcaoSelecionada !=4);
 }
 public static void menuAluno() {
-    int opcaoAluno = 0;
+    int opcaoAluno;
     do {
         System.out.println("***Menu Aluno***");
         System.out.println("1.Aluno Normal");
@@ -41,23 +43,25 @@ public static void menuAluno() {
 
         switch (opcaoAluno) {
             case 1:
-                //
+                cadastrarAluno(false);
                 break;
             case 2:
-
+                cadastrarAluno(true);
                 break;
-
             case 3:
+                alunosListar.listarAlunos();
+                break;
+            case 4:
                 System.out.println("Voltando...");
                 break;
             default:
                 System.out.println("Opção Inválida");
         }
-    } while (opcaoAluno !=3);
+    } while (opcaoAluno !=4);
 }
 
 public static void menuDisciplina() {
-    int opcaoDisciplina = 0;
+    int opcaoDisciplina;
     do {
         System.out.println("1.Cadastrar Disciplinas");
         System.out.println("2.Listar Turmas");
@@ -78,8 +82,29 @@ public static void menuDisciplina() {
 }
 
 public static int leitorNumero() {
-    int numero = 0;
+    int numero;
     Scanner leitor = new Scanner(System.in);
     numero = leitor.nextInt();
     return numero;
+}
+public static void cadastrarAluno(boolean especial) {
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Nome: ");
+    String nome = sc.nextLine();
+
+    System.out.print("Matrícula: ");
+    String matricula = sc.nextLine();
+
+    System.out.print("Curso: ");
+    String curso = sc.nextLine();
+
+    Aluno aluno;
+    if (especial) {
+        aluno = new AlunoEspecial(nome, matricula, curso);
+    } else {
+        aluno = new AlunoNormal(nome, matricula, curso);
+    }
+
+    alunosListar.adicionarAluno(aluno);
 }
