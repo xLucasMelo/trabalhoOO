@@ -9,26 +9,44 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Dados do Aluno
 
-- **Nome completo:** [Preencher aqui]
-- **Matrícula:** [Preencher aqui]
-- **Curso:** [Preencher aqui]
-- **Turma:** [Preencher aqui]
+- **Nome completo:** [Lucas Alves de Melo]
+- **Matrícula:** [241025541]
+- **Curso:** [Programação Orientadas a Objetos]
+- **Turma:** [06]
 
 ---
 
 ## Instruções para Compilação e Execução
 
 1. **Compilação:**  
-   [Descrever aqui como compilar o projeto. Exemplo: `javac Main.java` ou o script usado]
+   [Dentro da pasta src executar no terminal: javac --enable-preview --release 21 alunos\*.java disciplinas\*.java Sistema.java
+]
 
 2. **Execução:**  
-   [Descrever aqui como executar o projeto. Exemplo: `java Main` ou o script usado]
+   [Dentro da pasta src executar no terminal: java --enable-preview Sistema
+]
 
 3. **Estrutura de Pastas:**  
-   [Descrever aqui as principais pastas do projeto]
+   [São 4 pastas principais: alunos, avaliações, disciplinas e relatório. Ficando 
+      sigaa/
+         src/
+            alunos/
+               Aluno.java
+               AlunoEspecial.java
+               AlunoNormal.java
+               AlunoListar.java
+            avaliações/
+
+            disciplinas/
+
+               Disciplina,java
+               Turma.java
+            relatorios/
+                                                                         
+                                                                                           ]
 
 3. **Versão do JAVA utilizada:**  
-   [Descrever aqui como versão do JAVA utilizada no projeto. Sugestão: `java 21`]
+   [ java 21]
 
 ---
 
@@ -53,24 +71,24 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Principais Funcionalidades Implementadas
 
-- [ ] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
-- [ ] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
-- [ ] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
+- [x ] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
+- [x ] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
+- [x ] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
 - [ ] Lançamento de notas e controle de presença
 - [ ] Cálculo de média final e verificação de aprovação/reprovação
 - [ ] Relatórios de desempenho acadêmico por aluno, turma e disciplina
 - [ ] Persistência de dados em arquivos (.txt ou .csv)
-- [ ] Tratamento de duplicidade de matrículas
-- [ ] Uso de herança, polimorfismo e encapsulamento
+- [ x] Tratamento de duplicidade de matrículas
+- [x ] Uso de herança, polimorfismo e encapsulamento
 
 ---
 
 ## Observações (Extras ou Dificuldades)
 
-- [Espaço para o aluno comentar qualquer funcionalidade extra que implementou, dificuldades enfrentadas, ou considerações importantes.]
+- [Não consegui fazer os relatorios e a persistência dos dados infelizmente. Ate pesquisei um pouco como faria isso em java, mas pretendo continuar com o projeto e termina-lo mesmo depois da entrega!]
 
 ---
 
 ## Contato
 
-- [Opcional: E-mail pessoal do aluno.]
+- [lucastouram@gmail.com]
