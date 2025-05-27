@@ -43,7 +43,7 @@ public class AlunosListar {
             return;
         }
         for (Aluno a : listaDeAlunos) {
-            a.exibirDados(); // polimorfismo
+            a.exibirDados();
             System.out.println("------");
         }
     }
