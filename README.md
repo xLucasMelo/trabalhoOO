@@ -59,13 +59,13 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Prints da Execução
 
 1. Menu Principal:  
-   ![Inserir Print 1]("")
+   ![Inserir Print 1](https://github.com/xLucasMelo/trabalhoOO/blob/main/Captura%20de%20tela%202025-05-26%20215320.png)
 
 2. Cadastro de Aluno:  
-   ![Inserir Print 2](caminho/do/print2.png)
+   ![Inserir Print 2](Captura de tela 2025-05-26 215436.png)
 
 3. Relatório de Frequência/Notas:  
-   ![Inserir Print 3](caminho/do/print3.png)
+   ![Inserir Print 3](https://github.com/xLucasMelo/trabalhoOO/blob/main/Captura%20de%20tela%202025-05-26%20215533.png)
 
 ---
 
